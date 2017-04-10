@@ -1,0 +1,356 @@
+*{
+	font-family: 'Palanquin Dark', sans-serif;
+  	box-sizing: border-box;
+  	font-size: 17px;
+}
+html{
+	margin:0;
+   padding:0;
+   height:100%;
+}
+body{
+	background-image: url("seigaiha.png");
+	width: 100%;
+	height:100%;
+	position:relative;
+  	margin:0;
+}
+h1{
+	color: #011135;
+	font-size: 25px;
+	border-bottom: 2px solid gray;
+}
+
+html,body{
+  padding:0;
+}
+
+header{
+	position: absolute;
+	top:0;
+	right:0;
+	left:0;
+}
+
+footer{
+	position: fixed;
+	bottom:0;
+	right:0;
+	left:0;
+	height:50px;
+	text-align: center;
+	background-color:#333333;
+	border-top: 5px solid #564f4f;
+	color:beige;
+
+}
+
+/*~~~~~~~~~~Index Page~~~~~~~~~~~~~~*/
+
+/* black background color to top navigation*/
+.topnav{
+	background-color:#333333;
+	overflow:hidden;
+	border-bottom: 5px solid #564f4f;
+	width:100%;
+	overflow:auto;
+}
+
+/*style the links inside the navigation bar*/
+.topnav a{
+	float:right;
+	display:block;
+	color: beige;
+    text-align: center;
+    padding: 20px;
+    text-decoration: none;
+    font-size: 20px;
+}
+#nameTopnav{
+	float:left;
+	color:#f2f2f2;
+	width: 25%;
+	margin-left:15%;
+    text-align: center;
+    padding: 20px;
+    text-decoration: none;
+    font-size: 25px;
+    background-color: #011135;
+}
+
+.navMenu{
+	margin-right:15%;
+}
+
+.wrapper{
+	position:relative;
+   min-height:100%;
+	margin: 9% 15% 9% 15%;
+}
+
+/*About me Box*/
+.bigBox {	
+	float:left;
+	height: 90%;
+	width: 60%;
+	background-color: beige;
+	border: 1px solid gray;
+	padding: 15px;
+	margin-top:10px;
+	margin-right:50px;
+
+}
+
+#mePic{
+	width:200px;
+	height:200px;
+	float:left;
+	margin-right:5%;
+}
+
+
+/*Connect with me Box*/
+.connect {
+	float:left;
+	height:200px;
+	width: 275px;
+	letter-spacing:2px;
+	text-align: center;
+	border: 2px solid #333333;
+	background-color: beige;
+	border: 1px solid gray;
+	padding: 15px;
+}
+
+.connect img{
+	position:relative;
+}
+
+.connect h2{
+	color: #011135;
+	font-size:22px;
+	border-bottom: 2px solid #333333;
+}
+
+#iconLogo{
+	height: 70px; 
+	width: 70px; 
+	padding: 5px;
+}
+
+/*~~~~~~~~Portfolio Page~~~~~~~~~~~~~*/
+
+
+.image{
+	height:200px;
+	width:200px;
+	padding:25px;
+
+}
+.image img{
+	position: relative;
+	height:200px;
+	width:200px;
+
+}
+
+.appTitle{
+	position: relative;
+	left:10px;
+	height:30px;
+	width:200px;
+	top:155px;
+	text-align: center;
+	padding-bottom: 5px;
+	color:beige;
+	background-color: #333333;
+	font-size:20px;
+	z-index: 1;
+	text-decoration:none; 
+
+}
+
+#A{
+	position: relative;
+	bottom:40px;
+	float:left;
+	margin:10px;
+}
+#B{
+	position: relative;
+	bottom:40px;
+	float:left;
+
+	margin:10px;
+}
+#C{
+	position: relative;
+	bottom:40px;
+	float:left;
+	margin:10px;
+}
+#D{
+	position: relative;
+	bottom:40px;
+	float:left;
+
+	margin:10px;
+}
+
+/*Make images round borders*/
+.project{
+	height:200px;
+	width:200px;
+	border: 1px solid gray;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	margin: 20px;
+}
+
+
+/*~~~~~~~~Contact Page~~~~~~~~~~~~~~~*/
+label{
+	display:block;
+	margin-top:20px;
+	letter-spacing:2px;
+}
+
+
+
+/*centre the form within the page*/
+form{
+	float:left;
+	margin:0 auto;
+	width:459px;
+
+}
+
+/*style the text boxes*/
+input, textarea{
+	width:400px;
+	height:27px;
+	background:#efefef;
+	border:1px solid: #dedede;
+	padding:1px;
+	margin-top:3px;
+	font-size:0.9em;
+	color:#3a3a3a;
+}
+
+textarea {
+	height:165px;
+}
+
+#submit {
+    width:100px;
+    height:38px;
+    margin-top:20px;
+    cursor:pointer;
+    color:white;
+    background-color: #011135;
+    border-style:hidden;
+}
+
+/*Media queries*/
+@media screen and (max-width:980px){
+	#nameTopnav{
+		font-size: 23px;
+	}
+
+	.topnav a{
+		font-size:18px;
+	}
+
+	#mePic{
+		width:90%;
+		height:50%;
+	}
+	.bigBox{
+		width:45%;
+	}
+	.wrapper{
+		width:100%;
+
+	}
+
+	input, textarea{
+		width:400 px;
+	}
+
+	.image img{
+		width: 300px;
+	}
+
+	.appTitle{
+		width:300px;
+	}
+
+
+}
+
+@media screen and (max-width:768px){
+	#nameTopnav{
+		font-size: 20px;
+		    width: 26%;
+	}
+
+	.topnav a{
+		font-size:17px;
+	}
+
+	#mePic{
+		width:40%;
+		height:30%;
+	}
+
+	.bigBox{
+		width:100%;
+		margin-bottom: 20px;
+	}
+	.connect{
+		width:100%;
+		
+	}
+
+	.image img{
+		width: 200px;
+	}
+
+	.appTitle{
+		width:200px;
+	}
+}
+
+@media screen and (max-width:640px){
+	header{
+		position:static;
+	}
+
+	.wrapper{
+		margin: 4%;
+	}
+
+	#nameTopnav{
+		margin-left: 0;
+		width:100%;
+	}
+
+	.topnav a{
+		width:30%;
+
+	}
+	#mePic{
+		width:100%;
+		height: 50%;
+
+	}
+
+	.bigBox{
+		width:100%;
+		margin-bottom: 20px;
+	}
+	.connect{
+		width:100%;
+	}
+}
